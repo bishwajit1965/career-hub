@@ -19,7 +19,7 @@ export const Job = ({ job }) => {
     contact_information,
   } = job;
   return (
-    <div className="col-span-6 bg-slate-100 border lg:p-8 rounded-md space-y-3 shadow-md">
+    <div className="col-span-6 bg-slate-100 border p-2 lg:p-8 rounded-md space-y-3 shadow-md">
       <img src={logo} alt="" />
       <h2 className="font-bold mt-3">{job_title}</h2>
       <h2 className="font-bold mt-3">{company_name}</h2>

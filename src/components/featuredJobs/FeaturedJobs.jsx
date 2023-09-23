@@ -33,7 +33,7 @@ const FeaturedJobs = () => {
         title="Featured Jobs"
         description="Explore thousands of job opportunities with all the information you need. Its your future"
       />
-      <div className="lg:mt-10 grid grid-cols-12 justify-between gap-6">
+      <div className="lg:mt-10 grid md:grid-cols-12 lg:grid-cols-12 justify-between lg:gap-6 gap-4">
         {loading ? (
           <>
             <p>Loading...</p>
@@ -47,7 +47,7 @@ const FeaturedJobs = () => {
         )}
       </div>
       <div
-        className={`text-center lg:mt-10 ${
+        className={`text-center lg:mt-10 mt-4 ${
           dataLength === jobs.length ? "hidden" : ""
         }`}
       >

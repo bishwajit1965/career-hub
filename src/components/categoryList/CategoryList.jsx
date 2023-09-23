@@ -32,7 +32,7 @@ const CategoryList = () => {
         description="Explore thousands of job opportunities with all the information you
         need. Its your future"
       />
-      <div className="mt-10 grid grid-cols-12 justify-between gap-6">
+      <div className="lg:mt-10 mt-4 grid md:grid-cols-12 md:gap-4 gap-4 lg:grid-cols-12 justify-between lg:gap-6">
         {categories.map((category) => (
           <Category key={category.id} category={category} />
         ))}

@@ -43,7 +43,7 @@ const JobDetails = () => {
   return (
     <div className="">
       <SectionTitle title="Job details" description=" " />
-      <div className="grid grid-cols-12 gap-6 justify-between">
+      <div className="grid lg:grid-cols-12 md:grid-cols-12 lg:gap-6 gap-4 justify-between">
         <div className="lg:col-span-8 md:col-span-6 col-span-6 p-4 space-y-3">
           <p>
             <span className="font-bold"> Job description: </span>
