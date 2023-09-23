@@ -3,8 +3,8 @@ import "./HomeBanner.css";
 const HomeBanner = () => {
   return (
     <div className="grid lg:grid-cols-12 justify-between gap-6 bg-slate-100 rounded-md items-center lg:mt-20">
-      <div className="col-span-6 space-y-6 p-5">
-        <h1 className="text-5xl font-bold">
+      <div className="col-span-6 space-y-6 lg:p-5 p-2">
+        <h1 className="lg:text-5xl text-2xl font-bold">
           One Step Closer To Your <br />
           <span className="text-teal-400">Dream Job</span>
         </h1>

@@ -19,10 +19,10 @@ const JobApplied = ({ job }) => {
     contact_information,
   } = job;
   return (
-    <div className="lg:flex grid justify-between rounded-md mb-6 border lg:p-6 shadow-sm">
-      <div className="flex space-x-4 items-center">
-        <div className="col-span-4 bg-slate-200 w-44 p-5 h-36 flex items-center rounded-md">
-          <img src={logo} alt="" className="" />
+    <div className="lg:flex grid justify-between rounded-md mb-6 border lg:p-6 p-2 shadow-sm">
+      <div className="flex lg:space-x-4 space-x-2 items-center lg:col-span-6">
+        <div className="col-span-4 bg-slate-200 lg:w-44 w-44 h-28 flex justify-center lg:p-5 lg:h-36 items-center rounded-md">
+          <img src={logo} alt="" className=" flex justify-center" />
         </div>
         <div className="col-span-4 space-y-2 text-xs lg:text-base">
           <h3 className=" font-bold">{job_title}</h3>
@@ -36,7 +36,7 @@ const JobApplied = ({ job }) => {
               {job_type}
             </button>
           </div>
-          <div className="flex space-x-4 text-xs lg:text-base">
+          <div className="flex lg:space-x-4 space-x-2 text-xs lg:text-base">
             <span className="flex items-center">
               <FaLocationDot /> &nbsp;
               {location}
@@ -47,10 +47,10 @@ const JobApplied = ({ job }) => {
           </div>
         </div>
       </div>
-      <div className="col-span-4 flex items-center">
+      <div className="lg:col-span-6 flex items-center">
         <div className="lg:-my-0 my-2">
           <Link to={`/job-details/${id}`}>
-            <button className="btn btn-sm lg:btn-md text-xs lg:text-md lg:w-36 flex w-full text-white bg-gradient-to-r from-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500">
+            <button className="btn btn-sm lg:btn-md text-xs lg:text-md lg:w-40 text-white bg-gradient-to-r from-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500">
               <span className="flex items-center">
                 <FaEye className="mr-2 text-xl" /> View details
               </span>

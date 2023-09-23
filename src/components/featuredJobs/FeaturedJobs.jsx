@@ -61,7 +61,7 @@ const FeaturedJobs = () => {
         </button>
       </div>
       <div
-        className={`text-center lg:mt-10  ${
+        className={`text-center lg:mt-10 mt-4 ${
           dataLength === jobs.length ? "block " : "hidden"
         }`}
       >
